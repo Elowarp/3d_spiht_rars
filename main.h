@@ -43,10 +43,10 @@
 #define ENCODE	0
 #define DECODE  1
 
-long int nbitsread;
-long int nbitsreadheader;
-long int nbitswritten;
-long int nbitswrittenheader;
+extern long int nbitsread;
+extern long int nbitsreadheader;
+extern long int nbitswritten;
+extern long int nbitswrittenheader;
 
 #ifdef CHECKEND
 long int * imageoriglobal;
@@ -67,7 +67,7 @@ long int * imageweightcount;
 // dans un second temps, verifier les depassements.
 // size in bytes...
 // #define SIZEBLOCKSTREAM 524288
-long int sizeblockstream;
+extern long int sizeblockstream;
 
 // 
 typedef struct{
@@ -155,7 +155,7 @@ typedef struct{
 
 //declaration as global
 //  imageprop_struct imageprop;
-imageprop_struct imageprop;
+extern imageprop_struct imageprop;
 
 int print_imageprop();
 int print_coderparam(coder_param_struct coder_param);

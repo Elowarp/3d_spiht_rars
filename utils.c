@@ -18,6 +18,12 @@
 
 #include "main.h"
 
+long int nbitsread;
+long int nbitsreadheader;
+long int nbitswritten;
+long int nbitswrittenheader;
+long int sizeblockstream;
+imageprop_struct imageprop;
 
 
 int print_imageprop(){
